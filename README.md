@@ -1,1 +1,1 @@
-# quarkus-jasr352-poc
+# quarkus-jsr352-poc
