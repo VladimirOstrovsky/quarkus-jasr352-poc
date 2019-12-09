@@ -40,7 +40,7 @@ public class VowelRevertTask implements ServiceTask {
 			}
 		}
 		String ret = new String(dest);
-		log.debug(ret);
+		log.debug("com.example.bre.vowelexhange.VowelRevertTask.process(),return:"+ret);
 		return ret;
 	}
 

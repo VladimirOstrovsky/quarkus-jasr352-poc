@@ -19,7 +19,7 @@ public class BreVowelResource {
     @Inject
     EventBus bus;
     
-	@GET
+    @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Path("{sourcetext}")
     public CompletionStage<String> greeting(@PathParam String sourcetext) {
