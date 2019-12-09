@@ -21,8 +21,8 @@ public class BreVowelResource {
     
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Path("{sourcetext}")
-    public CompletionStage<String> greeting(@PathParam String sourcetext) {
+    @Path("/vowelrevert/{sourcetext}")
+    public CompletionStage<String> vowelRevert(@PathParam String sourcetext) {
         return bus.<String>request("com.example.bre.vowelexhange.VowelRevertTask", sourcetext)
                 .thenApply(Message::body);
     }
